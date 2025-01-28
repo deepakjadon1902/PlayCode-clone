@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gutter {
+  background-color: #2d2d2d;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gutter:hover {
+  background-color: #404040;
+}
+
+.gutter.gutter-horizontal {
+  cursor: col-resize;
+}
+
+.gutter.gutter-vertical {
+  cursor: row-resize;
+}
+
+.split {
+  display: flex;
+}
+
+.split.split-horizontal {
+  flex-direction: row;
+}
+
+/* Styles for the console output panel */
+.console-panel {
+  background-color: white; /* Set the background to white */
+  color: black; /* Default text color set to black */
+  font-family: monospace;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+/* Style for individual log entries */
+.console-panel .log {
+  color: black; /* Ensure all log text is black */
+  margin-bottom: 4px;
+}
+
+.console-panel .log.error {
+  color: #ff4c4c; /* Red for errors */
+}
+
+.console-panel .log.warn {
+  color: #ffc107; /* Yellow for warnings */
+}
+
+.console-panel .log.info {
+  color: #007bff; /* Blue for info */
+}
+
+.console-panel .log.log {
+  color: black; /* Black for regular logs */
+}
+
+/* Style for empty console message */
+.console-panel .empty {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Button hover effects */
+button {
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
