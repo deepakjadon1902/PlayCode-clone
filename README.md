@@ -1,11 +1,6 @@
 ﻿# PlayCode-clone
 Running the Project Locally
 
-Prerequisites
-
-Node.js (v14+ recommended)
-
-npm (or yarn)
 
 Steps
 
